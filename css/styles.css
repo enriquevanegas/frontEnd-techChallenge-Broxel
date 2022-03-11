@@ -1,4 +1,8 @@
-
+* {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #001E30;
+}
 *:focus{
     outline: 0 !important;
 }
@@ -15,8 +19,7 @@
 }
 
 input.search-field {
-    font-size: 1rem;
-    font-weight: 400;
+    width: 190px;
     color: #001E30;
 }
 input.search:focus {
@@ -33,24 +36,7 @@ i.bi-search {
     color: #495E75;
 }
 
-
-/* Dropdown Button */
-
-i.bi.bi-funnel-fill {
-    margin-right: 8px;
-}
-
-button.btn.dropdown-toggle {
-    width: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #001E30;
-}
-button.btn.dropdown-toggle::after {
-    color: #001E30;
-}
-
+/* iconos */
 .icons {
     margin: 0 24px;
     display: flex;
@@ -64,12 +50,70 @@ button.btn.dropdown-toggle::after {
     margin-right: 8px;
 }
 
+/* Botón "nueva solicitud" */
 button.btn-nva-solicitud {
     background-color: rgb(36,	166, 245);
+    color: #fff;
+}
+button.btn-nva-solicitud:active {
+    background-color: #108ad6;
+    color: #fff;
+}
+button.btn-nva-solicitud:hover {
     color: #fff;
 }
 
 button.btn-nva-solicitud i {
     color: #fff;
     padding: 0;
+    font-size: 18px;
+}
+
+
+/* === Filtro === */
+
+/* Dropdown Button */
+i.bi.bi-funnel-fill {
+    margin-left: 12px;
+    margin-right: 8px;
+    color: #495E75;
+}
+
+button.btn.dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #001E30;
+}
+button.btn.dropdown-toggle label {
+    margin-right: 57px;
+}
+button.btn.dropdown-toggle::after {
+    color: #001E30;
+}
+
+/* Flecha */
+.dropdown-toggle::after {
+    border: solid #000;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: 0 0 3px 0;
+    color: #001E30;
+}
+.dropdown-toggle:focus::after {
+    transform: rotate(225deg)!important;
+    -webkit-transform: rotate(225deg)!important;
+}
+div.dropdown-menu {
+    padding: 8px 0;
+}
+div.dropdown-menu.show {
+    transform: translate3d(-1px, 40px, 0px) !important;
+    -webkit-transform: translate3d(-1px, 40px, 0px) !important;
+}
+div.dropdown-item {
+    padding: 16px;
 }

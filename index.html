@@ -8,35 +8,44 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <title>Control Bar</title>
 </head>
 
 <body>
     <div class="container-fluid d-flex flex-column justify-content-center" style="height: 200px;">
-        <nav class="navbar-component mx-4 p-0 d-flex align-items-stretch">
+        <h2 class="font-weight-lighter mb-5">Control Bar</h2>
+        <nav class="navbar-component p-0 d-flex align-items-stretch">
             <div class="d-flex">
                 <form class="search-form form-inline h-100">
                     <div class="input-group h-100 d-flex align-items-center">
                         <!-- icon -->
                         <i class="bi bi-search"></i>
                         <!-- search field -->
-                        <input type="search" class="search-field border-0 border-right" placeholder="Buscar">
+                        <input type="search" class="search-field border-0 border-right h-100" placeholder="Buscar">
                     </div>
                     <div class="input-group border-left h-100 d-flex align-items-center">
-                        <!-- icon -->
-                        <i class="bi bi-funnel-fill"></i>
                         <!-- dropdown -->
-                        <div class="dropdown ">
-                            <button class="btn dropdown-toggle px-0" type="button" id="menu" data-toggle="dropdown"
-                                aria-expanded="false">
-                                Filtrar
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="btn-group">
+                            <div class="dropdown ">
+                                <button class="btn dropdown-toggle px-0" type="button" id="menu" data-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <!-- icon -->
+                                    <i class="bi bi-funnel-fill"></i>
+                                    <label >Filtrar</label>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="menu">
+                                    <div class="dropdown-item d-flex align-items-center"><input class="mr-3"
+                                        type="checkbox" name="" id=""><label
+                                            for=""></label>Incompleto</div>
+                                    <div class="dropdown-item d-flex align-items-center"><input class="mr-3"
+                                        type="checkbox" name="" id="">Pago Activo<label
+                                            for=""></label></div>
+                                    <div class="dropdown-item d-flex align-items-center"><input class="mr-3"
+                                        type="checkbox" name="" id=""><label
+                                            for=""></label>Pago Vencido</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -45,7 +54,7 @@
                     <i class="bi bi-grid"></i>
                     <i class="bi bi-list"></i>
                 </div>
-                <button class="btn btn-nva-solicitud h-100">
+                <button class="btn btn-nva-solicitud h-100 d-flex align-items-center">
                     <i class="bi bi-plus"></i>
                     Nueva Solicitud
                 </button>
