@@ -1,0 +1,73 @@
+
+*:focus{
+    outline: 0 !important;
+}
+
+.navbar-component {
+    height: 48px;
+    background-color: #fff;
+}
+
+.search-form {
+    padding-right: 16px;
+    border: solid 1px #CCD8E3;
+    border-radius: 3px;
+}
+
+input.search-field {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #001E30;
+}
+input.search:focus {
+    color: #001E30;
+}
+input.search-field::placeholder {
+    color: #CCD8E3;
+}
+
+i.bi-search {
+    margin-left: 12px;
+    margin-right: 8px;
+    padding: 4px;
+    color: #495E75;
+}
+
+i.bi.bi-funnel-fill {
+    margin-left: 12px;
+    margin-right: 8px;
+}
+
+button.btn.dropdown-toggle {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #001E30;
+}
+button.btn.dropdown-toggle::after {
+    color: #001E30;
+}
+
+.icons {
+    margin: 0 24px;
+    display: flex;
+    align-items: center;
+}
+.icons i {
+    padding: 4px;
+    color: #364759;
+}
+.icons i:first-child {
+    margin-right: 8px;
+}
+
+button.btn-nva-solicitud {
+    background-color: rgb(36,	166, 245);
+    color: #fff;
+}
+
+button.btn-nva-solicitud i {
+    color: #fff;
+    padding: 0;
+}
